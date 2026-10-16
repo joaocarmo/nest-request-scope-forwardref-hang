@@ -14,7 +14,7 @@ npm run repro:11.2.7
 npm ci                  # back to 12.1.3 after a versioned run
 ```
 
-| Version | Create -> Update | Update -> Create |
-|---|---|---|
-| 11.2.2 | throws `CircularDependencyException` | `ok (update.create is undefined)` |
+| Version                | Create -> Update                     | Update -> Create                  |
+| ---------------------- | ------------------------------------ | --------------------------------- |
+| 11.2.2                 | throws `CircularDependencyException` | `ok (update.create is undefined)` |
 | 11.2.3, 11.2.7, 12.1.3 | throws `CircularDependencyException` | **HANG: resolve() never settled** |
