@@ -2,7 +2,7 @@
 
 A request-scoped one-sided `forwardRef` cycle hangs instead of throwing a `CircularDependencyException`.
 
-Minimal reproduction for a `@nestjs/core` regression possiblyintroduced in 11.2.3 (nestjs/nest#17563).
+Minimal reproduction for a `@nestjs/core` regression possibly introduced in 11.2.3 (nestjs/nest#17563).
 
 We start with two request-scoped providers that depend on each other. Then, only `UpdateUsecase` uses `forwardRef`.
 
