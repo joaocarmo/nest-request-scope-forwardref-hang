@@ -19,5 +19,5 @@ npm ci                  # back to 12.1.3
 
 | Version                | Create to Update                     | Update to Create                  |
 | ---------------------- | ------------------------------------ | --------------------------------- |
-| 11.2.2                 | throws `CircularDependencyException` | `ok (update.create is undefined)` |
-| 11.2.3, 11.2.7, 12.1.3 | throws `CircularDependencyException` | `HANG: resolve() never settled`   |
+| 11.2.2                 | `ERROR: CircularDependencyException` | `ok (update.create is undefined)` |
+| 11.2.3, 11.2.7, 12.1.3 | `ERROR: CircularDependencyException` | `HANG: resolve() never settled`   |
